@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName
 import com.kotlinmvpframe.base.BaseBean
 
 
-/**
- * Created by 千里一醉 on 2017/1/19.
- */
-
 class MoneyDetailBean : BaseBean() {
 
     /**

@@ -60,7 +60,6 @@ open class BaseListModelImpl<S:BaseBean>: BaseModel<S>(), BaseListModel {
     override fun Params(): HashMap<String, String>? {
         ClearHashMap()
         mParams!!.put("page", PAGE.toString())
-        Log.i("xxx","xxxxxx")
         return mParams
     }
 

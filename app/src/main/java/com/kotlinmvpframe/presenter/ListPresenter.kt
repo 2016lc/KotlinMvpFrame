@@ -1,3 +1,4 @@
+/*
 package com.kotlinmvpframe.presenter
 
 import com.kotlinmvpframe.base.BaseBean
@@ -6,9 +7,11 @@ import com.kotlinmvpframe.mode.ListModel
 import com.kotlinmvpframe.mode.imlp.ListModeImpl
 import com.kotlinmvpframe.view.ListViews
 
+*/
 /**
  * Created by LC on 2017/9/13.
- */
+ *//*
+
 class ListPresenter(private val listViews: ListViews):BasePresenter<ListViews>() {
 
     var listmodel: ListModel?=null
@@ -42,4 +45,4 @@ class ListPresenter(private val listViews: ListViews):BasePresenter<ListViews>()
 
         })
     }
-}
+}*/

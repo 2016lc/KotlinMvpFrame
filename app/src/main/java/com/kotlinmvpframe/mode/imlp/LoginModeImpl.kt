@@ -2,6 +2,7 @@ package com.kotlinmvpframe.mode.imlp
 
 import com.kotlinmvpframe.base.BaseModel
 import com.kotlinmvpframe.base.BaseBean
+import com.kotlinmvpframe.bean.NewsTopBean
 import com.kotlinmvpframe.http.RetrofitManager
 import com.kotlinmvpframe.mode.LoginModel
 import rx.Observable
@@ -10,9 +11,9 @@ import rx.Observable
 /**
  * Created by LC on 2017/9/8.
  */
-class LoginModeImpl: LoginModel, BaseModel<BaseBean>() {
-    override fun ServiceParams(params: HashMap<String, String>): Observable<BaseBean> {
-        return RetrofitManager.builder().service!!.getRegisterList(params)
+class LoginModeImpl: LoginModel, BaseModel<NewsTopBean>() {
+    override fun ServiceParams(params: HashMap<String, String>): Observable<NewsTopBean> {
+        return RetrofitManager.builder().service!!.getNewTopList(params)
     }
 
 
@@ -34,7 +35,7 @@ class LoginModeImpl: LoginModel, BaseModel<BaseBean>() {
 
     override fun SuccessOperation(o: BaseBean) {
        // val message = o.message
-        if(o.success){
+        if(o.reason=="成功的返回!"){
             mOnLoginListener!!.LoginSuccess(o)
 
         }else{
@@ -43,8 +44,9 @@ class LoginModeImpl: LoginModel, BaseModel<BaseBean>() {
     }
     override fun Params(): HashMap<String, String>? {
         ClearHashMap()
-        mParams!!.put("username",mUserName!!)
-        mParams!!.put("password",mPassWord!!)
+       // mParams!!.put("username",mUserName!!)
+       // mParams!!.put("password",mPassWord!!)
+        mParams!!.put("key", "6e72ebfc6449ee2c8d538797890099ea")
         return mParams
     }
 

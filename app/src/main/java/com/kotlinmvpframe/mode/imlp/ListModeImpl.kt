@@ -1,3 +1,4 @@
+/*
 package com.kotlinmvpframe.mode.imlp
 
 import com.kotlinmvpframe.base.BaseBean
@@ -8,9 +9,11 @@ import com.kotlinmvpframe.mode.ListModel
 import retrofit2.http.POST
 import rx.Observable
 
+*/
 /**
  * Created by LC on 2017/9/14.
- */
+ *//*
+
 class ListModeImpl:BaseModel<MyPaperBean>(),ListModel {
 
     override fun ServiceParams(params: HashMap<String, String>): Observable<MyPaperBean> {
@@ -77,4 +80,4 @@ class ListModeImpl:BaseModel<MyPaperBean>(),ListModel {
         mParams!!.put("page", PAGE.toString())
         return mParams
     }
-}
+}*/

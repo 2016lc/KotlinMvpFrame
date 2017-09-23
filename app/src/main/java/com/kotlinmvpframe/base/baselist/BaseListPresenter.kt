@@ -2,9 +2,7 @@ package com.kotlinmvpframe.base.baselist
 
 import com.kotlinmvpframe.base.BaseBean
 import com.kotlinmvpframe.base.BasePresenter
-import com.kotlinmvpframe.mode.ListModel
-import com.kotlinmvpframe.mode.MoneyDetailModelImpl
-import com.kotlinmvpframe.mode.imlp.ListModeImpl
+
 
 /**
  * Created by LC on 2017/9/15.

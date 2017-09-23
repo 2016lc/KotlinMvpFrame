@@ -1,3 +1,4 @@
+/*
 package com.kotlinmvpframe.activity
 
 import android.support.v7.app.AppCompatActivity
@@ -12,7 +13,7 @@ import com.kotlinmvpframe.R
 import com.kotlinmvpframe.adapter.MyAdapter
 import com.kotlinmvpframe.base.BaseActivity
 import com.kotlinmvpframe.bean.MyPaperBean
-import com.kotlinmvpframe.presenter.ListPresenter
+
 import com.kotlinmvpframe.view.ListViews
 import kotlinx.android.synthetic.main.activity_list.*
 
@@ -78,3 +79,4 @@ class ListActivity : BaseActivity<ListViews,ListPresenter>(),ListViews {
     }
 
 }
+*/
