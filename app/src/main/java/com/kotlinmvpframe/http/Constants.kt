@@ -5,6 +5,6 @@ package com.kotlinmvpframe.http
  */
 object Constants {
 
-    val BASE_URL="http://www.biye.com/"
+
 
 }

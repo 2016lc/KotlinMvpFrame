@@ -13,19 +13,5 @@ import rx.Observable
  */
 interface RetrofitService {
 
-    //登录
-    @FormUrlEncoded
-    @POST("/app/common/login.html")
-    fun getRegisterList(@FieldMap params: HashMap<String, String>): Observable<BaseBean>
-
-    //我的论文
-    @FormUrlEncoded
-    @POST("/app/check/paperList.html")
-    fun getPaperList(@FieldMap params: HashMap<String, String>): Observable<MyPaperBean>
-
-
-    //资金明细
-    @FormUrlEncoded
-    @POST("/app/check/fundDetailList.html")
-    fun getMoneyDetail(@FieldMap params: Map<String, String>): Observable<MoneyDetailBean>
+    
 }
