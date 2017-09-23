@@ -1,5 +1,6 @@
 package com.kotlinmvpframe.base.baselist
 
+import android.util.Log
 import com.kotlinmvpframe.base.BaseBean
 import com.kotlinmvpframe.base.BaseModel
 import com.kotlinmvpframe.bean.MyPaperBean
@@ -59,6 +60,7 @@ open class BaseListModelImpl<S:BaseBean>: BaseModel<S>(), BaseListModel {
     override fun Params(): HashMap<String, String>? {
         ClearHashMap()
         mParams!!.put("page", PAGE.toString())
+        Log.i("xxx","xxxxxx")
         return mParams
     }
 
